@@ -23,9 +23,24 @@ public class MovimientoJugador : MonoBehaviour
     }
     
       public void Movimiento(InputAction.CallbackContext contexto){
-            
-            
-            entrada = contexto.ReadValue<Vector2>();  
-             Debug.Log("Contexto " + entrada);
-    }
+      
+          Vector2 valorEntrada = contexto.ReadValue<Vector2>();
+
+        // Determinar el eje dominante
+        if (Mathf.Abs(valorEntrada.x) > Mathf.Abs(valorEntrada.y))
+        {
+            // Movimiento horizontal
+            entrada = new Vector2(Mathf.Sign(valorEntrada.x), 0);
+        }
+        else if (Mathf.Abs(valorEntrada.y) > 0)
+        {
+            // Movimiento vertical
+            entrada = new Vector2(0, Mathf.Sign(valorEntrada.y));
+        }
+        else
+        {
+            entrada = Vector2.zero;
+        }
+   
+        }
 }
