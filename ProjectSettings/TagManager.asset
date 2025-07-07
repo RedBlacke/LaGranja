@@ -41,3 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: suelo
+    uniqueID: 3706842163
+    locked: 0
+  - name: Player
+    uniqueID: 2515598287
+    locked: 0
+  - name: Gallina
+    uniqueID: 552171097
+    locked: 0
+  - name: Gallina (1)
+    uniqueID: 1639772239
+    locked: 0
+  - name: ZonaGallina
+    uniqueID: 2834830427
+    locked: 0
+  - name: ZonaGallina (1)
+    uniqueID: 2851521081
+    locked: 0
+  - name: Vaca
+    uniqueID: 1893755951
+    locked: 0
+  - name: ZonaVaca
+    uniqueID: 950349885
+    locked: 0
+  - name: Nido
+    uniqueID: 1376488417
+    locked: 0
