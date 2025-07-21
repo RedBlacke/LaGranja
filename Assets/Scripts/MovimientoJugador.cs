@@ -9,6 +9,7 @@ public class MovimientoJugador : MonoBehaviour
     public Vector2 entrada;
     Rigidbody2D rb;
     public float velocidad = 5f;
+    public GameObject trigoPreFab;
 
     // Start is called before the first frame update
     void Start()
@@ -42,5 +43,14 @@ public class MovimientoJugador : MonoBehaviour
             entrada = Vector2.zero;
         }
    
+        }
+        
+        
+        public void SembrarTrigo(InputAction.CallbackContext contexto){
+              if(contexto.started)
+              {
+                   Instantiate(trigoPreFab , transform.position , Quaternion.identity);
+              }
+        
         }
 }
