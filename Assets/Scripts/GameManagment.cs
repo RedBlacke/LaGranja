@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManagment : MonoBehaviour
 {
    public static GameManagment instancia;
-   int contadorHuevo;
+   public int contadorHuevo;
    
    void Awake(){
    
